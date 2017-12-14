@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-	<head>
+<html lang="en">
+    <head>
 		<title>Robby Deryckere</title>
 		<meta charset="utf-8"/>
 		<link type="text/css" rel="stylesheet" href="css/reset.css"/>
@@ -21,15 +21,23 @@
 				</ul>
 			</nav>
 		</header>
-		
-		<div class="cf">
-			<h1>Welcome to my portfolio site!</h1>
-			<p>This is a website created to show all the programs in JavaScript I wrote. </p>
-		</div>
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="js/main.js"></script>
-		<script src=""></script>
-	</body>
-	
+    
+        <div id="bookRoom" class="cf">
+            <h2>How many rooms do you need?</h2>
+            <input type="text" id="roomsNeeded">
+            <button id="hotelSubmit">Submit</button>
+            <p>Rooms available:</p>
+            <p id="outputAR"></p>
+            <p id="message"></p>
+        </div>
+
+        <div>
+            <h2>How many rooms would you like to check out from?</h2>
+            <input type="text" id="roomsUnbook">
+            <button id="hotelUnbook">Submit</button>
+            <p id="unbookMsg"></p>
+        </div>
+
+        <script src="js/hotelbookings.js"></script>
+    </body>
 </html>

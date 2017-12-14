@@ -1,0 +1,135 @@
+/*
+Final -  Main Stylesheet
+*/
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html 
+{
+  box-sizing: border-box;
+}
+
+*, *:before, *:after 
+{
+  box-sizing: inherit;
+}
+
+body
+{
+	Background-color: #222;
+	color: #fff;
+	font-size: 100%;
+}
+
+header
+{
+    Background-color: white;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+nav
+{
+    float: left;
+    width: 100%;
+    line-height: 75px;
+}
+
+nav ul
+{
+    float: left;
+    width: 100%;
+}
+
+nav ul li
+{
+    float: left;
+    width: 14.285%;
+}
+
+nav ul li a
+{
+    float: left;
+    text-align: center;
+    color: #222;
+    width: 100%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+}
+
+nav ul li a:hover
+{
+    background-color: black;
+    color: white;
+    text-shadow: 2px 2px 5px #fff;
+}
+
+h1
+{
+	font-size: 1.5em;
+    font-family: Arial, Helvetica, Sans-serif;
+    color: white;
+    line-height: 30px;
+}
+
+h2
+{
+    font-size: 1.4em;
+    font-family: Arial, Helvetica, Sans-serif;
+    color: white;
+    line-height: 25px;
+}
+
+h3
+{
+    font-size: 1.25em;
+    font-family: Arial, Helvetica, Sans-serif;
+    color: white;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+
+div
+{
+    margin-bottom: 20px;
+}
+
+#cypheredText, #decriptedText
+{
+    font-size: 1em;
+    font-family: Arial, Helvetica, Sans-serif;
+    color: red;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input
+{
+    margin-top: 20px;
+    margin-bottom: 20px;  
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
