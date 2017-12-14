@@ -111,6 +111,23 @@ input
     margin-bottom: 20px;  
 }
 
+#about
+{
+    width: 75%;
+    margin: 0 auto;
+}
+
+#about h2
+{
+    line-height: 30px;
+    text-align: center;
+}
+
+#about p
+{
+    line-height: 20px;
+}
+
 a
 {
     text-decoration: none;
