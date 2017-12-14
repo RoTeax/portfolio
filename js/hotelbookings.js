@@ -17,6 +17,7 @@ function notPossible(msg) {
     msg.innerText = "There aren't enough rooms in the hotel!";
 }
 
+var outputAR = document.getElementById("outputAR");
 availability(outputAR);
 
 document.getElementById("hotelSubmit").addEventListener("click", function() {
