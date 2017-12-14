@@ -55,7 +55,7 @@ function expiryValidator(expiry){
 
     var usermonth = Number(expiry.slice(0,2));
     var useryear = Number(expiry.slice(2));
-    return usermonth >= month && useryear >= year;
+    return usermonth >= month && useryear >= year || usermonth <= month && useryear > year;
 }
 
 document.getElementById('submitButton').addEventListener("click", function () {
@@ -66,7 +66,7 @@ document.getElementById('submitButton').addEventListener("click", function () {
     
     if(cardValidator(card)){
         validator.innerText = "The Card is Valid";
-        output.innerText = "Card Type is: ", cardVendor(card.creditcardnumber);
+        output.innerText = "Card Type is: " + cardVendor(card.creditcardnumber);
     }
     else{
         validator.innerText = "It's not valid";
